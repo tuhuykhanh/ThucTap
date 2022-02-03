@@ -1,0 +1,76 @@
+
+:root{
+    --color: #17202A;
+    --bgc: #DAF7A6;
+    
+    --btnbg-regis: #979A9A;
+    --btnbg-signin: #40E0D0;
+}
+.btn
+{
+    width: fit-content;
+    height: 4rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+    cursor: pointer;
+
+    &:hover
+    {
+        background-color: orange !important;
+        a  
+        {
+            color: black !important;
+        }
+        i
+        {
+            color: black !important;
+        }
+    }
+}
+
+
+
+@keyframes slideFromTop {
+    from
+    {
+        transform: translateY(-20rem);
+    }
+    to
+    {
+        transform: translateY(0)
+    }
+}
+
+
+@keyframes slide {
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loginTitle {
+    from{
+        transform: translateY(-10rem);
+    }
+    to{
+        transform:translateY(0);
+        transform:rotate(45deg);
+    }
+}
+
+
+@keyframes showTopText {
+    0% { transform: translate3d(0, 100%, 0); }
+    40%, 60% { transform: translate3d(0, 50%, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+}
+
+@keyframes showBottomText {
+0% { transform: translate3d(0, -100%, 0); }
+100% { transform: translate3d(0, 0, 0); }
+}
